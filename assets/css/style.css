@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'maxine';
-    src: url('assets/fonts/Sloop-ScriptThree.ttf');
+    font-family: 'Maxine';
+    src: url('../fonts/Sloop-ScriptThree.ttf');
 }
 
 /* NAVBAR */
@@ -38,7 +38,7 @@
 }
 
 .hero {
-    background-image: url('assets/img/*BACKGROUND/Main Page.png');
+    background-image: url('../img/BACKGROUND/Main\ Page.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -78,7 +78,7 @@
 /* ABOUT */
 
 .about{
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/About Me.png');
+    background-image: url('../img/BACKGROUND/More\ About\ Maxine.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -125,7 +125,7 @@
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .about2 {
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/About Me.png');
+    background-image: url('../img/BACKGROUND/About\ Me.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -182,7 +182,7 @@
 }
 /* WORK EXPERIENCE */
 .work{
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/Work Experience, Skills : Software Skills Background.png');
+    background-image: url('../img/BACKGROUND/Work\ Experience\,\ Skills\ :\ Software\ Skills\ Background.png');
     height: 900px;
     background-position: center;
     background-repeat: no-repeat;
@@ -291,7 +291,7 @@
 }
 /* ACADS */
 .acads{
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/Education : Contact Background.png');
+    background-image: url('../img/BACKGROUND/Education\ :\ Contact\ Background.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -523,7 +523,7 @@
 
 /* SKILLS */
 .skills{
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/Work Experience, Skills : Software Skills Background.png');
+    background-image: url('../img/BACKGROUND/Work\ Experience\,\ Skills\ :\ Software\ Skills\ Background.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -634,7 +634,7 @@
 
 /* Software Section */
 .software {
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/Work Experience, Skills : Software Skills Background.png');
+    background-image: url('../img/BACKGROUND/Work\ Experience\,\ Skills\ :\ Software\ Skills\ Background.png');
     background-size: cover;
     background-position: top center;
     background-repeat: no-repeat;
@@ -647,7 +647,7 @@
 }
 
 .software {
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/Work Experience, Skills : Software Skills Background.png');
+    background-image: url('../img/BACKGROUND/Work\ Experience\,\ Skills\ :\ Software\ Skills\ Background.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -787,7 +787,7 @@
 
 /* CONTACT */
 .footer{
-    background-image: url('assets/img/ACADEMIC/BACKGROUND/Education : Contact Background.png');
+    background-image: url('../img/BACKGROUND/Education\ :\ Contact\ Background.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
