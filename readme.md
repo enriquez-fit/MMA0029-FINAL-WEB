@@ -69,6 +69,7 @@ Description of the project in details.
 - Containers
 - Image Effects
 - Bootstrap Carousel
+- Overlapping Fonts
 
 
 ### Technology
