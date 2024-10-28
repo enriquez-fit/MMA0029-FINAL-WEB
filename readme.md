@@ -65,9 +65,11 @@ Description of the project in details.
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 - Navigation Bar
-- Bootstrap Carousel
-- Containers
 - Buttons
+- Containers
+- Image Effects
+- Bootstrap Carousel
+
 
 ### Technology
 <!-- TODO: List of Technology Used -->
