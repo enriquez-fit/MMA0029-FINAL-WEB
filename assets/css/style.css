@@ -7,8 +7,8 @@
 
 .navbar {
     position: fixed;
-    z-index: 1000;
     width: 100%;
+    z-index: 9999;
 }
 
 .navbar-custom {
@@ -25,7 +25,7 @@
 .navbar-brand{
     margin-right: 10%;
     margin-left: 3%;
-    width: 75px;
+    width: 55px;
     display: flex;
     align-items: center;
 }
@@ -78,7 +78,7 @@
 /* ABOUT */
 
 .about{
-    background-image: url('../img/More\ About\ Maxine.png');
+    background-image: url('../img/1.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -90,11 +90,11 @@
 .about h1{
     color: white;
     font-family: "DM Serif Display", serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
     letter-spacing: 3px;
     font-size: 80px;
-    margin-left: 36%;
+    margin-left: 30%;
     padding-top: 290px;
     line-height: 4px;
 }
@@ -105,7 +105,7 @@
     font-style: normal;
     letter-spacing: 3px;
     font-size: 80px;
-    margin-left: 39%;
+    margin-left: 30%;
     padding-top: 4px;
     z-index:1;
 }
@@ -117,15 +117,15 @@
     white-space: nowrap;
     letter-spacing: 5px;
     position: absolute;
-    top: 51%;
-    left: 790px;
+    top: 53%;
+    left: 705px;
     transform: translate(-50%, -50%);
     z-index: 2;
     font-size: 140px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
 .about2 {
-    background-image: url('../img/About\ Me.png');
+    background-image: url('../img/2.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -179,6 +179,62 @@
     font-size: 18px;
     margin-left: 75px;
     padding-top: 32px;
+}
+/* LOGO */
+.logo{
+    background-image: url('../img/4.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    height: 110vh;
+    position: relative;
+}
+.logo h1, .logo h2, .logo h3{
+    color: white;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+.logo h1 {
+    font-size: 65px;
+    margin-left: 735px;
+    padding-top: 180px;
+    line-height: 10px;
+}
+
+.logo h2 {
+    font-family: "maxine", serif;
+    font-weight: 90;
+    font-size: 180px;
+    position: absolute;
+    top: 200px;
+    margin-left: 605px;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.logo h3 {
+    font-size: 65px;
+    margin-left: 690px;
+    padding-top: 34px;
+    line-height: 1px;
+    margin-bottom: -20px;
+}
+.container-logo p{
+    color: white;
+    font-family: 'Questrial';
+    letter-spacing: 2px;
+    text-align: center;
+    margin-top: 372px;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+.container-logo img{
+    width: 900px;
+    margin-left: 280px;
+    margin-top: -730px;
 }
 /* WORK EXPERIENCE */
 .work{
@@ -290,23 +346,38 @@
    line-height: 1;
 }
 /* ACADS */
-.acads{
+.acads {
     background-image: url('../img/Education\ :\ Contact\ Background.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
-    min-height: 150vh;
+    min-height: 110vh;
     position: relative;
+    margin: 0;
+    padding: 0;
 }
-.education .card{
-    margin-top: -600;
+
+.education {
+    margin: 0;
+    padding: 0;
 }
+
+.education .container {
+    margin: 0;
+    padding: 0;
+}
+
+.education .card {
+    margin-top: 0;  /* Ensure there's no top margin here */
+    left: 250px;
+}
+
 .card {
     width: 180px;
     justify-content: center;
+}
 
-  }
 .card-text {
     text-align: center;
     font-size: 10px;
@@ -316,6 +387,7 @@
     margin-top: 0;
     line-height: 1.2;
 }
+
 .card-text-level {
     text-align: center;
     font-size: 12px;
@@ -325,6 +397,7 @@
     max-width: 80%;
     line-height: 1;
 }
+
 .card-text-year {
     text-align: center;
     font-size: 14px;
@@ -337,188 +410,134 @@
     background-image: linear-gradient(to right, rgb(49, 47, 52), rgb(71, 68, 72));
     border-radius: 20px;
 }
-.majors{
-        text-align: center;
-        font-size: 10px;
-        font-family: "Questrial", sans-serif;
-        margin: 0 auto;
-        max-width: 80%;
-        margin-top: 12px;
-        line-height: .8;
-}
-.majors::after {
-        content: '';
-        display: block;
-        width: 110%;
-        height: 1px;
-        background-color: rgb(85, 69, 69);
-        margin: 5px auto 0;
-}
-.card-body ul li{
-        text-align: justify;
-        font-size: 12px;
-        font-family: "Questrial", sans-serif;
-        margin: 0 auto;
-        max-width: 80%;
-        margin-top: 10px;
-        line-height: 1;
-        list-style: circle;
-        margin-right: 20px;
+
+.majors {
+    text-align: center;
+    font-size: 10px;
+    font-family: "Questrial", sans-serif;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 12px;
+    line-height: .8;
 }
 
-.acads h1{
+.majors::after {
+    content: '';
+    display: block;
+    width: 110%;
+    height: 1px;
+    background-color: rgb(85, 69, 69);
+    margin: 5px auto 0;
+}
+
+.card-body ul li {
+    text-align: justify;
+    font-size: 12px;
+    font-family: "Questrial", sans-serif;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 10px;
+    line-height: 1;
+    list-style: circle;
+    margin-right: 20px;
+}
+
+.acads h1, .acads h2, .acads h3 {
     color: white;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+}
+
+.acads h1 {
     font-size: 65px;
     margin-left: 600px;
     padding-top: 200px;
     line-height: 10px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
-.acads h2{
-    color: #ffffff;
+
+.acads h2 {
     font-family: "maxine", serif;
     font-weight: 90;
-    font-style: normal;
-    white-space: nowrap;
-    letter-spacing: 1px;
+    font-size: 200px;
     position: absolute;
     top: 220px;
-    margin-left:525px;
+    margin-left: 525px;
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-size: 200px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
-.acads h3{
-    color: white;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 1px;
+
+.acads h3 {
     font-size: 65px;
     margin-left: 600px;
     padding-top: 34px;
     line-height: 1px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
     margin-bottom: -20px;
 }
 
 
-/* ACHIEVEMENTS */
+/* PROJECTS */
 
-.achievements{
-    background-image: url('../img/Work\ Experience\,\ Skills\ :\ Software\ Skills\ Background.png');
+.projects{
+    background-image: url('../img/4.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
-    height: 110vh;
+    height: 195vh;
     position: relative;
 }
-.recognition-container{
-    display: flex;
-    flex-direction: column;
-    gap: 1px;
-    margin-top: 29px;
-    padding-left: 35%;
-    margin-bottom: 120px;
-}
-
-
-.award-entry {
-    display: flex;
-    align-items: flex-start;
-    gap: 1px;
-}
-
-
-.award-entry .year {
-    flex: 0.8;
-}
-
-.award-entry .year h1 {
-    font-family: "Questrial", sans-serif;
-    font-weight: 200;
-    font-size: 18px;
-    color: #000;
-    margin:0;
-    line-height: 2px;
-    padding-top:100px;
-
-}
-
-
-.award {
-    flex: 2;
-    height: 20px;
-}
-.achievements .work .h1{
+.projects h1, .projects h2, .projects h3, .projects h4 {
     color: white;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
-    font-size: 65px;
-    margin-left: 95px;
-    padding-top: 100px;
-    line-height: 10px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    
 }
-.achievements .work h2{
-    color: #ffffff;
+
+.projects h1 {
+    font-size: 65px;
+    margin-left: 705px;
+    padding-top: 200px;
+    line-height: 10px;
+}
+
+.projects h2 {
     font-family: "maxine", serif;
     font-weight: 90;
-    font-style: normal;
-    white-space: nowrap;
-    letter-spacing: 1px;
+    font-size: 160px;
     position: absolute;
-    top: 175px;
-    margin-left:115px;
+    top: 220px;
+    margin-left: 605px;
     transform: translate(-50%, -50%);
     z-index: 2;
-    font-size: 130px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
-.achievements .work h3{
-    color: white;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 1px;
+
+.projects h3 {
     font-size: 65px;
-    margin-left: 200px;
-    padding-top: 50px;
-    line-height: 10px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-left: 650px;
+    padding-top: 34px;
+    line-height: 1px;
+    margin-bottom: -20px;
 }
-
-.award h1 {
-    font-family: "DM Serif Display", serif;
-    font-weight: 100;
-    font-size: 18px;
-    color: #000;
-    margin: 0;
-    padding-top: 65px;
-    padding-bottom: 10px;
+.projects h4{
+    font-size: 40px;
+    margin-left: 570px;
+    padding-top: 124px;
+    line-height: 1px;
+    margin-bottom: -20px;
 }
-
-.award h4 {
-    font-family: "DM Serif Display", serif;
-    letter-spacing: 0.5px;
-   font-size: 12px;
-
-}
-
-.award p {
-    font-family: "Questrial", sans-serif;
-    font-weight: normal;
-    font-size: 15px;
-    margin-top: 12px;
-   line-height: 1;
+.projects p{
+    color: white;
+    font-family: 'Questrial';
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 55px;
+    margin-bottom: 10px;
+    font-size: 23px;
 }
 
 /* SKILLS */
@@ -531,13 +550,15 @@
     min-height: 100vh;
     position: relative;
 }
-.header{
+.skills .header  {
     font-family: "DM Serif Display", serif;
     font-size: 50px;
-    margin-left: 35%;
+    margin-left: -25px;
     color: white;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
+
 }
+
 .skills h1{
         color: #ffffff;
         font-family: "maxine", serif;
@@ -546,7 +567,7 @@
         white-space: nowrap;
         letter-spacing: 1px;
         position: absolute;
-        top: 120px;
+        top: 180px;
         margin-left:615px;
         transform: translate(-50%, -50%);
         z-index: 2;
@@ -561,7 +582,7 @@
     letter-spacing: 1px;
     font-size: 65px;
     margin-left: 760px;
-    padding-top: 10px;
+    top: 290px;
     line-height: 10px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
 }
@@ -598,6 +619,7 @@
     margin-bottom: 8px;
     font-size: 14px;
     color: #FFF;
+    top:40px;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
     &::before{
@@ -651,8 +673,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 110vh;
-    padding: 2rem;
+    min-height: 100vh;
+    padding: 1rem 2rem;  /* Reduced top padding */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -668,26 +690,28 @@
     letter-spacing: 1px;
     font-size: 65px;
     margin-left: 95px;
-    padding-top: 100px;
     line-height: 10px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-top: -130px;  /* Removed top margin */
 }
+
 .software h2 {
     font-family: "Maxine", serif;
-    font-size: 130px;
+    font-size: 190px;
     position: relative;
-    top: 50px;
+    top: 20px;  /* Reduced top space to bring it higher */
     z-index: 2;
-    margin-left: -240px;
-    margin-top: -80px;
+    margin-left: -280px;
+    margin-top: -40px;  /* Adjusted to reduce space */
 }
+
 .software h3 {
     color: white;
     font-family: "DM Serif Display", serif;
     font-size: 65px;
     line-height: 1;
-    margin-top: -160px;
-    margin-left: 25px;
+    margin-top: -260px;  /* Reduced margin-top to move it up */
+    margin-left: -35px;
 }
 
 .software .container {
@@ -786,94 +810,130 @@
 }
 
 /* CONTACT */
-.footer{
-    background-image: url('../img/Education\ :\ Contact\ Background.png');
+.footer {
+    background-image: url('../img/Education : Contact Background.png');
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
     vertical-align: middle;
-    min-height: 105vh;
+    min-height: 130vh;
     position: relative;
-}
-.footer h1{
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .footer h1, .footer h2, .footer h3 {
     color: white;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
     font-style: normal;
     letter-spacing: 1px;
-    font-size: 65px;
-    margin-left: 105px;
-    padding-top: 100px;
-    line-height: 10px;
     -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-.footer h2{
+    margin-top: 230px;
+  }
+  
+  .footer h1 {
+    font-size: 65px;
+    margin-top: 20px;
+   margin-left: -890px;
+  }
+  
+  .footer h2 {
     color: #e8bdf8;
     font-family: "maxine", serif;
     font-weight: 90;
-    font-style: normal;
-    white-space: nowrap;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 135px;
-    margin-left:345px;
-    transform: translate(-50%, -50%);
-    z-index: 2;
     font-size: 130px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-}
-.footer h3{
-    color: white;
-    font-family: "DM Serif Display", serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 1px;
+    position: relative;
+    margin-top: -190px;
+    margin-left: 350px;
+  }
+  
+  .footer h3 {
     font-size: 65px;
-    margin-left: 349px;
-    padding-top: 80px;
-    line-height: 10px;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    margin-top: 100px;
+    margin-left: -610px;
+  }
+  
+  .contact-details {
+    margin-top: 30px;
+  }
+  
+  
+.phone h3 {
+    color:white;
+    font-size: 22px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    margin-left: 210px;
+    margin-top: 100px;
 }
+.email h3{
+    color:white;
+    font-size: 22px;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    margin-left: 210px;
+    margin-top: 100px;
+}
+  .phone p {
+    font-family: "Questrial", sans-serif;
+    color: white;
+    font-weight: normal;
+    -webkit-text-stroke: none;
+    padding-top: 40px;
+    margin-left: 380px;
+  }
+  .email p{
+    margin-left: 520px;
+    padding-top: 40px;
+  }
+  
+  .social {
+    margin-top: 100px;
+  }
+  
+  .social-icons {
+    padding-left: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+  }
+  
+  .social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 15px;
+    border: 1px solid #e8bdf8;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    color: #e8bdf8;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons li:hover {
+    color: white;
+    border: 1px solid white;
+    opacity: 0.8;
+  }
+  
+  .social-icons li i {
+    color: inherit;
+  }
+  .logo2 img{
+    margin-left: -990px;
+    width: 100px;
+   margin-top: -70px;
+   opacity: 0.5;
+  }
+  .logo2 p{
+    font-size: 15px;
+    margin-top: -120px;
+    margin-left: 990px;
+    opacity: 0.5;
+    color: #e8bdf8;
 
-.phone h1{
-    font-family: "DM Serif Display", serif;
-    font-size: 20px;
-    color: white;
-    margin-left: 880px;
-    font-weight: 400;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-}
-.phone p{
-    font-family: "Questrial", sans-serif;
-    font-size: 22px;
-    color: white;
-    margin-left: 880px;
-    font-weight: normal;
-    -webkit-text-stroke: none;
-    padding-top: 10px;
-}
-.email h1{
-    font-family: "DM Serif Display", serif;
-    font-size: 20px;
-    color: white;
-    margin-left: 880px;
-    font-weight: 400;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-}
-.email p{
-    font-family: "Questrial", sans-serif;
-    font-size: 22px;
-    color: white;
-    margin-left: 880px;
-    font-weight: normal;
-    -webkit-text-stroke: none;
-    padding-top: 10px;
-}
-.socials h1{
-    font-family: "DM Serif Display", serif;
-    font-size: 20px;
-    color: white;
-    margin-left: 880px;
-    font-weight: 400;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
-}
+  }
+  
